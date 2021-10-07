@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <img src="/img/aws-lambda-logo.png" alt="logo">
+            <a href="#home" id="navbar__logo">Cloud of Things</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#skills" class="navbar__links" id="skills-page">Skills</a>
+              </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About me</a>
+                </li>
+                
+                <li class="navbar__btn">
+                    <a href="https://cloudofthings.net/" class="button" id="main-page">Main page</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- main section-->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading"> <span>Leszek Ucinski</span></h1>
+            <p class="hero__description">My portfolio</p>
+            <button class="main__btn"><a href="#about">Explore</a></button>
+        </div>
+    </div>
+
+    <!-- about section-->
+    <div class="main", id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card"><img src="img/me.jpg" alt="me"></div>
+            </div>
+            <div class="main__content">
+                <h1>Internet of Things Developer</h1>
+                <h2>AWS Certified Cloud Practitioner</h2>
+                <p></p>
+                <button class="main__btn"><a href="#skills">What I can</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills section-->
+    <div class="skills", id="skills">
+        <h1>Skills</h1>
+        <div class="skills__wprapper">
+            <div class="skills__card">
+                <h2>Good experience</h2>
+                <li>Python</li>
+                <li>C\C++</li>
+                <li>AWS CloudFormation</li>
+                <li>AWS EC2, Lambda, CDK</li>
+                <li>Ubuntu</li>
+                <li>Programming Embedded Systems</li>
+                <div class="skills__btn"></div>
+            </div>
+            <div class="skills__card">
+                <h2>Tools and Techniques</h2>
+                <li>Scrum</li>
+                <li>CI/CD</li>
+                <div class="skills__btn"></div>
+            </div>
+            <div class="skills__card">
+                <h2>Some experience:</h2>
+                <li>Docker containers</li>
+                <li>Node.js</li>
+                <li>JavaScript</li>
+                <div class="skills__btn"></div>
+            </div>
+            <div class="skills__card">
+                <h2>My Projects</h2>
+                <li><a href="https://github.com/CloudedThings/100-Days-in-Cloud"> 100 Days in Cloud - one AWS related Lab a day for 100 days</a></li>
+                <li><a href="https://github.com/CloudedThings/HighGrowMQTT"> Plant moisture monitoring app</a></li>
+                <li><a href="https://github.com/CloudedThings/Arduino-LCD-MQTT"> LCD display with MQTT server</a></li>
+                <div class="skills__btn"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="about-me">
+        <div class="main__container">
+          <div class="main__content">
+            <h1>About me</h1>
+          </div>
+          <div class="main__img--container">
+            <div class="main__img--card" id="card-2">
+              <h2>Hobbies</h2>
+            <li>Cycling</li>
+            <li>Reading books</li>
+            <li>Experimenting with embedded systems like Arduino and ESP32</li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              
+              <h2>LinkedIn</h2>
+              <a href="https://www.linkedin.com/in/leszekucinski/">li</a> 
+            </div>
+            <div class="footer__link--items">
+              <h2>GitHub</h2>
+              <a href="https://github.com/CloudedThings">gt</a> 
+            </div>
+          </div>
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Blog</h2>
+              <a href="https://cloudofthings.net/">blog</a>
+            </div>
+            <div class="footer__link--items">
+              <p class="counter"> Visitors count: </p>
+              <p id ="body"></p>
+              
+              <script type = "text/javascript">
+                var apiUrl = "https://y1gxvl8ow1.execute-api.eu-north-1.amazonaws.com/Dev";
+                  fetch(apiUrl)
+                  .then(response => response.json())
+                  .then(data =>{
+                var count = document.getElementById('body');
+                count.innerHTML = data.body;
+                console.log(data)});
+              </script>
+            </div>
+          </div>
+        </div>
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              
+              
+            </div>
+            <p class="website__rights">© Cloud of Things 2021. All rights reserved</p>
+            
+            <div class="social__icons">
+              <a href="/" class="social__icon--link" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="/" class="social__icon--link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="/" class="social__icon--link"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="/" class="social__icon--link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="/" class="social__icon--link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              
+            </div>
+          </div>
+        </section>
+      </div>
+  
+
+    <script src="app.js"></script>
+    
+    
+</body>
+</html>
