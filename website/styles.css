@@ -87,14 +87,14 @@
   outline: none;
   border-radius: 4px;
   background: #e3eaf2;
-  background: -webkit-linear-gradient(to right, #f78503, #fcb045, #bea068);
-  background: linear-gradient(to right, #f78503, #fcb045, #bea068);
+  background: -webkit-linear-gradient(to right, #666665, #666665, #666665);
+  background: linear-gradient(to right, #666665, #666665, #666665);
   color: #fff;
   transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-  color: #fda500;
+  color: #666665;
   transition: all 0.3s ease;
 }
 
@@ -219,12 +219,8 @@
 
 .hero__heading span {
   background: #e3eaf2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #ffae00, #fcb045
-    
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #f78503, #fcb045
-    
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #666665, #666665, #666665); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #666665, #302f2f, #666665); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -234,17 +230,10 @@
 
 .hero__description {
   font-size: 32px;
-  background: #f78503; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f78503,
-    #fcb045
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f78503,
-    #fcb045
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #666665; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #666665, #302f2f, #666665); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #666665, #302f2f, #666665
+); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -253,7 +242,7 @@
 }
 
 .highlight {
-  border-bottom: 4px solid rgb(255, 123, 0);
+  border-bottom: 4px solid rgb(85, 84, 84);
 }
 
 @media screen and (max-width: 768px) {
@@ -282,7 +271,7 @@
   z-index: 1;
   width: 100%;
   max-width: 1300px;
-  padding: 0 50px;
+  padding: 0 0px;
 }
 
 .main__content {
@@ -293,7 +282,7 @@
 .main__content h1 {
   font-size: 4rem;
   background-color: #f78503;
-  background-image: linear-gradient(to top, #f78503 0%, #fcb045 100%);
+  background-image: linear-gradient(to left, #48484b, #424242, #a7a6a6);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -306,16 +295,8 @@
 .main__content h2 {
   font-size: 2rem;
   background: #f78503; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f78503,
-    #fcb045
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f78503,
-    #fcb045
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient( #48484b, #424242, #a7a6a6); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient( #48484b, #424242, #a7a6a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -332,8 +313,8 @@
 .main__btn {
   font-size: 1.8rem;
   background: #f78503;
-  background: -webkit-linear-gradient(to right, #f78503, #fcb045, #bea068);
-  background: linear-gradient(to right, #f78503, #fcb045, #bea068);
+  background: -webkit-linear-gradient(to right, #48484b, #424242, #a7a6a6);
+  background: linear-gradient(to right,  #48484b, #424242, #a7a6a6);
   padding: 20px 60px;
   border: none;
   border-radius: 4px;
@@ -358,7 +339,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: #f78503;
+  background: #48484b;
   transition: all 0.35s;
   border-radius: 4px;
 }
@@ -385,10 +366,7 @@
   justify-content: center;
   color: #fff;
   background-image: linear-gradient(-225deg,
-  #231557 0%,
-  #f78503 29%,
-  #fcb045 67%,
-  #fff800 100%);
+  #48484b, #424242, #a7a6a6);
 }
 
 .fa-layer-group,
@@ -397,17 +375,11 @@
 }
 
 #card-2 {
-  background: #ff512f;
+  background: #48484b;
   background: -webkit-linear-gradient(-225deg,
-  #231557 0%,
-  #f78503 29%,
-  #fcb045 67%,
-  #fff800 100%);
+  #48484b, #424242, #a7a6a6);
   background: linear-gradient(-225deg,
-  #231557 0%,
-  #f78503 29%,
-  #fcb045 67%,
-  #fff800 100%);
+  #48484b, #424242, #a7a6a6);
 }
 
 /* Mobile Responsive */
@@ -494,7 +466,7 @@
 
 .skills h1 {
   background-color: #ff8177;
-  background-image: linear-gradient(to top, #f78503 0%, #fcb045 100%);
+  background-image: linear-gradient(to left, #48484b, #424242, #a7a6a6);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -523,10 +495,7 @@
   justify-content: center;
   color: #fff;
   background-image: linear-gradient(-225deg,
-  #231557 0%,
-  #f78503 29%,
-  #fcb045 67%,
-  #fff800 100%);
+  #48484b, #424242, #a7a6a6);
   transition: 0.3s ease-in;
 }
 
@@ -536,18 +505,10 @@
   background: #1fa2ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     -225deg,
-    #231557 0%,
-    #f78503 29%,
-    #fcb045 67%,
-    #fff800 100%
-  ); /* Chrome 10-25, Safari 5.1-6 */
+    #48484b, #424242, #a7a6a6); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     -225deg,
-    #231557 0%,
-    #f78503 29%,
-    #fcb045 67%,
-    #fff800 100%
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    #48484b, #424242, #a7a6a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .skills__card:nth-child(3) {
@@ -555,11 +516,7 @@
   grid-row: 2;
   background-image: linear-gradient(
     -225deg,
-    #231557 0%,
-    #f78503 29%,
-    #fcb045 67%,
-    #fff800 100%
-  );
+    #48484b, #424242, #a7a6a6);
 }
 
 .skills__card h2 {
