@@ -627,6 +627,21 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+footer .footer__link p{
+    background: #333333;
+    color:rgb(255, 255, 255);
+}
+
+footer span{
+    background: #333333;
+    color:rgb(255, 255, 255);
+}
+
+footer a href{
+    background: #333333;
+    color:rgb(255, 255, 255);
+}
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
