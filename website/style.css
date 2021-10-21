@@ -379,6 +379,7 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    
 }
 .skills .skills-content .left p{
     text-align: justify;
@@ -452,6 +453,9 @@ section .title::after{
 }
 .skills-content .right .docker::before{
     width: 65%;
+}
+.skills-content .right .iac::before{
+    width: 40%;
 }
 
 /* teams section styling */
@@ -755,6 +759,7 @@ footer a href{
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
+        font-weight: bold;
         font-size: 19px;
     }
     .contact .right form .fields{
